@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>shh</title>
+<style>
+    body {
+      background-color: #0f0f0f;
+      color: #fff;
+      font-family: 'Courier New', monospace;
+      text-align: center;
+      padding-top: 80px;
+    }
+    .hidden-button {
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      width: 12px;
+      height: 12px;
+      background-color: rgba(255, 255, 255, 0.05);
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      z-index: 9999;
+    }
+    .hidden-button:hover {
+      background-color: rgba(255, 255, 255, 0.3);
+    }
+    #content {
+      display: none;
+      margin-top: 30px;
+    }
+    h1 {
+      font-size: 3em;
+    }
+    a {
+      display: block;
+      color: #7fffd4;
+      margin: 10px 0;
+      font-size: 1.2em;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+<h1>🤫</h1>
+<button class="hidden-button" onclick="unlockContent()"></button>
+<div id="content">
+<h2>Games</h2>
+<a href="https://www.crazygames.com/" target="_blank">Crazy Games</a>
+<a href="https://gavan228.github.io/gaming/slope/index.html" target="_blank">Slope</a>
+<a href="https://sellaknight.thecappuccino.site/semag/mind/index.html" target="_blank">Mind Game</a>
+<a href="https://reider71164.github.io/" target="_blank">Reider's Games</a>
+<a href="https://www.crazygames.com/" target="_blank">Crazy Games</a><br/><a href="https://gavan228.github.io/gaming/slope/index.html" target="_blank">Slope</a><br/><a href="https://sellaknight.thecappuccino.site/semag/mind/index.html" target="_blank">Mind Game</a><br/><a href="https://reider71164.github.io/" target="_blank">Reider's Games</a><br/><a href="https://gettingoverit.co/" target="_blank">Getting Over It</a><br/><a href="https://neal.fun/" target="_blank">Neal Fun</a><br/><a href="https://www.byronknoll.com/snake.html" target="_blank">Snake Game</a><br/></div>
+<script>
+    function unlockContent() {
+      const pw = prompt("Password?");
+      if (pw === "h1") {
+        document.getElementById("content").style.display = "block";
+      } else {
+        alert("Wrong password.");
+      }
+    }
+  </script>
+</body>
+</html>
